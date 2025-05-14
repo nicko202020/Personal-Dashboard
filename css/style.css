@@ -1,0 +1,169 @@
+/* General Body Styling */
+body {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  color: #00ff00;
+  background: black;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* Window Styling */
+.window {
+  position: absolute;
+  border: 4px solid #1f2993;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Title Bar Styling */
+.title-bar {
+  position: absolute; /* Stick it to the top of the box */
+  top: 0; /* Align flush with the top edge */
+  left: 0; /* Align flush with the left edge */
+  width: 100%; /* Ensure it spans the entire width of the box */
+  text-align: center;
+  font-weight: bold;
+  padding: 5px 0; /* Optional padding inside the banner */
+  margin: 0; /* Remove any unwanted spacing */
+  background-color: #1f2993; /* Blue background color */
+  color: #ffffff;
+  font-size: 16px;
+  z-index: 1; /* Ensure the banner is above other content */
+}
+
+
+/* Financial Box Styling */
+.financial-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #00ff00;
+  overflow: hidden; /* Ensure no scrolling */
+  height: 100%;
+}
+
+.financial-box .ticker {
+  font-size: calc(50% - 40px); /* Adjust dynamically to take half the box height */
+  font-weight: bold;
+  margin: 20px; /* Spacing from edges */
+  color: #00ff00;
+  line-height: 0.9; /* Reduce line spacing */
+}
+
+.financial-box .price {
+  font-size: calc(25% - 10px); /* Dynamic sizing for remaining space */
+  margin: 5px 20px; /* Less margin below */
+  color: #00ff00;
+}
+
+.financial-box .change {
+  font-size: calc(25% - 10px); /* Dynamic sizing for remaining space */
+  margin: 5px 20px; /* Less margin below */
+  color: #00ff00;
+}
+
+/* Spotify Box */
+.spotify-box .content-container {
+  text-align: center;
+}
+
+.spotify-now-playing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.spotify-now-playing img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.spotify-controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.spotify-controls button {
+  background: #001100;
+  color: #00ff00;
+  border: 2px solid #00ff00;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.spotify-controls input[type="range"] {
+  accent-color: #00ff00;
+}
+
+/* Center Box for Carousell Listings */
+.center-box .content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.center-box .content-container div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.center-box .content-container img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: 2px solid #00ff00;
+}
+
+.center-box .content-container a {
+  color: #00ff00;
+  text-decoration: underline;
+}
+
+.center-box .content-container p {
+  margin: 0;
+}
+
+/* Image Box Styling */
+.image-container {
+  height: 100%; /* Fill the container's height */
+  width: 100%; /* Fill the container's width */
+  display: flex; /* Flexbox for alignment */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  overflow: hidden; /* Hide anything outside the container */
+}
+
+.image-container img {
+  width: 100%; /* Stretch the image to fill the width */
+  height: 100%; /* Stretch the image to fill the height */
+  object-fit: cover; /* Ensure the image maintains aspect ratio while filling the box */
+  object-position: center; /* Center the image within the container */
+}
+#symbol {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #00ff00;
+}
+
+#go-back {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #00ff00;
+}

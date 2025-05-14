@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Screensaver Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Spotify Box in Center Top -->
+  <div class="window spotify-box" style="left: calc(100vw / 3); top: 0; width: calc(100vw / 3); height: calc((100vh - calc(100vw / 3)) / 2); border: 4px solid #1f2993;">
+    <div class="title-bar" style="position: absolute; width: 100%; top: 0; text-align: center;">SPOTIFY BOX</div>
+    <div class="content-container" style="margin-top: 40px;">
+      <!-- Spotify Now Playing -->
+      <div class="spotify-now-playing">
+        <img id="album-art" src="" alt="Album Art">
+        <div class="track-info">
+          <h3 id="track-title">Track Title</h3>
+          <p id="artist-name">Artist Name</p>
+        </div>
+      </div>
+
+      <!-- Spotify Controls -->
+      <div class="spotify-controls">
+        <button id="prev-track" class="spotify-button">⏮</button>
+        <button id="play-pause" class="spotify-button" data-playing="false">⏯</button>
+        <button id="next-track" class="spotify-button">⏭</button>
+        <input type="range" id="volume-control" min="0" max="100" value="50">
+      </div>
+
+      <!-- Spotify Playlists -->
+      <div class="spotify-playlists">
+        <ul id="playlists-list">
+          <!-- Dynamic content goes here -->
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Center Square Box in 2nd Column -->
+  <div class="window center-box" style="left: calc(100vw / 3); top: calc((100vh - calc(100vw / 3)) / 2); width: calc(100vw / 3); height: calc(100vw / 3); border: 4px solid #1f2993;">
+    <div class="title-bar" style="position: absolute; width: 100%; top: 0; text-align: center;">CENTER BOX</div>
+    <div class="content-container" style="margin-top: 40px;">
+      <!-- Content goes here -->
+    </div>
+  </div>
+
+<!-- Image Box in 1st Column -->
+<div class="window image-box" style="left: 0; top: 0; width: calc(100vw / 3); height: calc((100vh - calc(100vw / 3)) / 2 + calc(100vw / 3)); border: 4px solid #1f2993;">
+  <div class="title-bar" style="position: absolute; width: 100%; top: 0; text-align: center;">IMAGE BOX</div>
+  <div class="image-container">
+    <img src="images/image1.gif" alt="Infinite Mind">
+  </div>
+</div>
+
+  <!-- Image Box in 3rd Column -->
+  <div class="window image-box" style="right: 0; top: calc((100vh - calc(100vw / 3)) / 2); width: calc(100vw / 3); height: calc((100vh - calc(100vw / 3)) / 2 + calc(100vw / 3)); border: 4px solid #1f2993;">
+    <div class="title-bar" style="position: absolute; width: 100%; top: 0; text-align: center;">IMAGE BOX</div>
+    <div class="image-container" style="margin-top: 40px;">
+      <img src="images/image2.gif" alt="Sacred Wave">
+    </div>
+  </div>
+
+  <!-- Financial Information Box -->
+  <div class="window financial-box" style="left: 0; top: calc((100vh - calc(100vw / 3)) / 2 + calc(100vw / 3)); bottom: 0; width: calc(100vw * 2 / 3); border: 4px solid #1f2993;">
+    <div class="title-bar" style="position: absolute; width: 100%; top: 0; text-align: center;">FINANCIAL INFORMATION</div>
+    <div id="financial-info" class="content-container" style="margin-top: 40px;">
+      <!-- Financial data will be dynamically loaded here -->
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

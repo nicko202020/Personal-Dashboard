@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Screensaver Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Center Square Box in 2nd Column -->
+  <div class="window center-box" style="left: calc(100vw / 3); top: calc((100vh - calc(100vw / 3)) / 2); width: calc(100vw / 3); height: calc(100vw / 3);">
+    <div class="title-bar">CENTER BOX</div>
+    <div class="content-container">
+      <!-- Content goes here -->
+    </div>
+  </div>
+
+    <!-- Image Box in 1st Column -->
+  <div class="window image-box" style="left: 0; top: 0; width: calc(100vw / 3); height: calc((100vh - calc(100vw / 3)) / 2 + calc(100vw / 3));">
+    <div class="title-bar">IMAGE BOX</div>
+    <div class="image-container">
+      <img src="images/image1.gif" alt="Infinite Mind">
+    </div>
+  </div>
+
+    <!-- Image Box in 3rd Column -->
+  <div class="window image-box" style="right: 0; top: calc((100vh - calc(100vw / 3)) / 2); width: calc(100vw / 3); height: calc((100vh - calc(100vw / 3)) / 2 + calc(100vw / 3));">
+    <div class="title-bar">IMAGE BOX</div>
+    <div class="image-container">
+      <img src="images/image2.gif" alt="Sacred Wave">
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
